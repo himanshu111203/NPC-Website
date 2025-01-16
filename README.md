@@ -12,7 +12,6 @@ Here’s a quick update from today's meeting:
 ⿡ Website Details: The website should have a professional design and tone.
 ⿢ Tech Stack: We will use HTML, CSS, and JavaScript for the front end and Python Django for the backend.
 ⿣ GitHub Collaboration: Development will be done collaboratively via a GitHub repository. Please learn the basics of GitHub or download Git Desktop to stay in sync.
-⿤ Task Assignments: Tasks will be assigned by tomorrow or the day after.
 ⿥ Deadline: The first draft of the landing page is due by 25th Jan.
 
 ### Landing Page Structure:
