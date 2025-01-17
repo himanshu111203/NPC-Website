@@ -1,8 +1,8 @@
 Objective is to create a website that firstly explains the benefits of working in Russia i.e, attract the workers for the services available.. 
 Then finally create an application form for the same
 CURRENT LANGUAGE PLANS:
-Frontend- Django 
-Backend- HTML CSS JS
+Frontend- HTML CSS JS 
+Backend- Django
 
 OTHER MESSAGES:
 
