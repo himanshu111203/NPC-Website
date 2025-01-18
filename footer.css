@@ -1,0 +1,94 @@
+/* Basic reset and layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    background-color: #003366;
+    padding: 5px;
+}
+
+/* Footer Styles */
+.footer {
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+p {
+    font-size: 16px;
+}
+.upperfooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Logo Section */
+.logo {
+    display: flex;
+    flex-direction: column; /* Stacks the logos vertically */
+    align-items: center; /* Centers the logos horizontally */
+    margin-left: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px; /* Reduced space between logos and other elements */
+    gap: 10px; /* Reduced space between logos */
+}
+
+.logo img {
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+/* Links Section */
+.links-1, .links-2, .info {
+    flex: 1;
+}
+
+h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 50px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.nav-item img {
+    margin-right: 8px;
+    width: auto;
+    height: 25px;
+}
+
+/* Footer Year and Copyright */
+.elementor-widget-container {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background-color: black;
+    width: 100%;
+    padding: 10px 0;
+    margin-left: 0%;
+    margin-right: 0%;
+    line-height: 25px;
+}
+
