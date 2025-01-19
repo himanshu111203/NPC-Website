@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russian Workforce Importance</title>
+    <!-- Font Awesome for Icons in the contact info provided -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> 
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+</head>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Andika:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap');
+        
+        iframe { border: none; width: 100%; }
+        #header { height: 100px;}
+        #footer { height: 369px;}
+        
+        
+        
+        
+        /* Scroll Animation Code*/
+        /* @keyframes appear {
+            from{
+                opacity: 0;
+                transform: translateX(-700px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+
+        
+        .facts-section {
+            animation: appear 5s linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        } */
+
+        /* General Styles */
+        body {
+            font-family: Andika, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: white;
+        }
+
+        /* Taglines Section */
+        .tagline-container {
+            padding-top: 100px;
+            background: url('https://asset.gecdesigns.com/img/background-templates/dark-blue-background-with-the-diamond-pattern-template-sr06012408-1704699724568-cover.webp');
+            background-size: 100% 100%; /* Stretch image to fit width and height */
+            background-repeat: no-repeat; 
+            position: relative;
+            height: 500px;
+        }
+
+        .tagline {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            
+            
+        } 
+
+        
+        .tagline h1 {
+            font-size: 60px;
+            text-shadow: lavender 6px 1px 0px;
+            text-decoration: overline;                  
+         }
+
+        .tagline p {
+            padding-top: 10px;
+            height:150px;
+            font-size: 30px;
+            background-color: rgb(100, 149, 237,0.1);
+            box-shadow: 0 10px 8px gold;
+            color: turquoise;
+            border-radius: 25px;
+            font-family: Bradley Hand ITC;
+        }
+        
+
+        #tagline-1 {
+            display: block; /* Ensure the first tagline is visible initially */
+        }
+
+
+        /* Welcome Section */
+   
+        .welcome-section {
+            text-align: center;
+            padding: 50px 20px;
+            height: 700px;
+            background-color: #0099db;
+            transform: scale(0.95);
+        }
+
+        .welcome-section h1 {
+            color: #183550;
+            text-decoration: overline;
+            text-decoration-thickness: 2px;
+            text-decoration-color: brown;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .welcome-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            gap: 20px;
+            
+        }
+
+        .welcome-image {
+            z-index: -100;
+            width: 1100px;
+            height: 1400x;
+            margin-right: 10px;
+           
+        }
+
+        .welcome-text {
+            text-align: justify;
+            text-justify: auto;
+            max-width: 800px;
+            height: 500px;
+            margin-top: 50px;
+            box-shadow: black 50px 50px 30px;
+            font-size: 25px;
+            border-radius: 50%;
+            color: white;
+        }
+
+
+        /* Facts Section */
+        .facts-section {
+            padding: 50px 20px;
+            background-color: #e8f0ff;
+            text-align: center;
+        }
+
+        .facts-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .facts-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .fact {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .fact:hover {
+            transform: scale(1.1); /* Zoom in */
+            background-color: #0099db; /* Change background color */
+            color: #bdccd2;
+
+        }
+
+        .fact h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .welcome-content {
+                flex-direction: column;
+            }
+
+            .facts-container {
+                flex-direction: column;
+            }
+
+            .fact {
+                width: 100%;
+            }
+        }
+    </style>
+
+<body>
+    <iframe id="header" src="header.html"></iframe>
+    <iframe id="navbar" src="nav.html"></iframe>
+    <!-- Taglines Section -->
+    <div class="tagline-container">
+        <div class="tagline" id="tagline-1">
+            <h1 style="font-size: 60px;"> Global Career Advancement </h1> <p> Join a workforce that thrives on innovation and international collaboration. </p>
+        </div>
+        <div class="tagline" id="tagline-2">
+            <h1>Competitive Salaries & Benefits</h1> <p>Enjoy lucrative packages that reflect your skills and contributions.</p>
+        </div>
+        <div class="tagline" id="tagline-3">
+            <h1>Cultural Diversity</h1> <p>Experience a unique blend of Eastern and Western influences in one of the world’s most vibrant countries.</p>
+        </div>
+        <div class="tagline" id="tagline-4">
+        <h1>Personal Growth</h1> <p>Expand your horizons in a nation that values expertise and hard work.</p>
+        </div>
+    </div>
+
+    <!-- Company Facts Section -->
+    <section class="facts-section">
+        <h2>XYZ Workforce</h2>
+        <div class="facts-container">
+            <div class="fact">
+                <h3>Innovative Solutions</h3>
+                <p>Our clients succeed through our innovative workforce solutions. With expertise in recruitment and workforce management, our workforce is in the lead, driving success through tailored strategies and cutting-edge technology. We understand the evolving needs of industries and craft solutions that empower businesses to achieve their goals efficiently. <br> From sourcing top-tier talent to streamlining workforce operations, we deliver results that make a lasting impact. Together, we build agile, future-ready teams that propel our clients toward sustained growth and excellence in a competitive world.</p>
+            </div>
+            <div class="fact">
+                <h3>Global Partnerships</h3>
+                <p>We collaborate with leading organizations worldwide to connect talent with opportunities. By fostering strong partnerships across industries, we ensure that individuals with unique skills and aspirations find roles where they can thrive. Our global network allows us to bridge the gap between innovative companies and exceptional professionals, creating a pathway for meaningful careers. <br> Together, we’re not just filling positions—we’re building futures, empowering growth, and driving success for both businesses and individuals on a global scale</p>
+            </div>
+            <div class="fact">
+                <h3>Trusted by Thousands</h3>
+                <p> Our reputation is built on trust and a proven track record of delivering exceptional results. We bridge the gap between workers and companies, ensuring mutual growth, satisfaction, and long-term success through reliable and innovative solutions.</p
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <h1 style="font-weight: 700;">Welcome to XYZ Manpower Consultant</h1> 
+         <div class="welcome-content">
+             <img src="../images/img.png" alt="Workforce" class="welcome-image">
+             <div class="welcome-text">
+                 <p>
+                     <b>At XYZ Manpower Consultant, we bridge the gap between global opportunities and talented professionals. 
+                     Our mission is to make your dreams of working in Russia a reality. </b>
+                 </p>
+                 <p>
+                     With years of expertise in recruitment, we ensure seamless processes, cultural adaptability, and unmatched 
+                     support for your career growth.
+                 </p>
+                <p> <b>
+                    Our commitment extends beyond just placement. We offer personalized guidance throughout the entire journey, ensuring a smooth transition into your new role, while equipping you with the tools and resources needed to thrive in an international work environment.
+                </p> </b>
+             </div>
+         </div>
+     </section>
+
+     <style>
+                /* About Us Section */
+        .others {
+            background-color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border: 2px solid #ddd;
+            position: relative;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .others:hover {
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            animation: sparkle 1s infinite linear;
+        }
+
+        .others h1 {
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        #underline {
+            width: 60px;
+            height: 3px;
+            background-color: black;
+            border: none;
+            margin: 10px auto;
+        }
+
+        .others p {
+            display: flex;
+            font-size: 18px;
+            margin: 20px;
+            color: #333;
+            
+            
+        }
+
+        #hover1:hover {
+            background-color: #183550;
+            color: white;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            
+            
+        }
+
+        #other-paras
+        {
+            
+            text-align: justify;
+            max-width:1000px;
+            margin: auto;
+
+        }
+
+        /* .image-container {                               
+
+        } */
+    </style>
+     
+    <section class="others">
+        
+        <div class="about-us">
+        <!-- About us Section-->
+        <h1 id="hover1">About Us</h1>
+        <hr id="underline">
+        <p> <b>Libra International Services was established in 2006 under the proprietorship of  Dr.Inder Maurya (MD Emergency Medicine). Our day to day operations are run by Mr. Ramkishan Maurya (Director Operations).</b> 
+
+             Libra International Services is managed by experienced professionals in recruiting manpower for the Gulf countries with its Director operations and Director Business development having extensive experience of working in the Middle East and fully aware of the laws and regulations and what the companies expect when recruiting from India. Our large data bank of professionals and skilled workers in every category is based on interest of the companies requiring variety of manpower. </p>
+            <br> 
+        <p id="other-paras">Starting from initial screening of CVs received from candidates and until the candidates arrival in the Overseas Country we ensure very careful scrutiny and selection at every step of the recruitment process.
+            
+            Because of its sourcing, processing and deployment capability at the shortest lead time Libra International Services has earned its reputation and has became popular company in Middle East for recruitment services.</p>
+        </div>
+
+        <div class="service-section">
+        <!-- Services Section -->
+         <h1 id="hover1"> Services</h1>
+         <hr id="underline">
+         <p> 
+         </p>
+        </div>
+
+<style>
+
+.choose-us-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.choose-us-column {
+    width: 45%;
+    background-color: #183550;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    transition: all 0.3s ease;
+
+}
+
+.choose-us-column h3 {
+    font-size: 29px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    box-shadow: white 5px 5px 50px;
+    
+}
+
+.choose-us-column p {
+    font-size: 16px;
+    color: #f9f9f9;
+    line-height: 1.6;
+    font-family: Segoe Print;   
+}
+
+.choose-us-column:hover {
+    box-shadow: 0 0 20px 5px black;
+    animation: sparkle 1s infinite;
+    transform: translateY(-100px); /* Moves the element slightly upwards */
+}
+</style>
+        <div>
+        <!--Why choose us-->
+        <h1 id="hover1"> Why Choose Us?</h1> 
+        <hr id="underline"> <br><br>
+        
+            <div class="choose-us-container">
+                <div class="choose-us-column">
+                    <h3>Quality Guarantees</h3> 
+                    <p>We ensure the highest quality in all of our services, backed by rigorous quality control processes. Your satisfaction is our top priority, and we guarantee excellence in every step of the project.</p>
+                
+                    <h3>Timely Delivery</h3>
+                    <p>We value your time. Our team is committed to delivering results on schedule. You can count on us to meet deadlines without compromising on quality.</p>
+                </div>
+                <div class="choose-us-column">
+                    <h3>Full Legal Support</h3>
+                    <p>We provide full legal support throughout your project, ensuring compliance and legal security. You can rest assured that all legal aspects are handled by our expert team.</p>
+                    <h3>Convenient Collaboration Conditions</h3>
+                    <p>We offer flexible collaboration terms that cater to your needs. Our process is streamlined for maximum efficiency, making it easy for you to work with us and achieve your goals.</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+        <!--Testimonals-->
+        <h1 id="hover1"> Testimonals </h1>
+        <hr id="underline">
+        </div>
+     </section>
+
+     <!--CONTACT US-->
+     <style>
+    .Contact-Us {
+        background-color: black;
+        background-size: 100% 100%;
+        color: white;
+    }
+    
+    .Contact-Us h1 {
+        text-shadow: white 2px 2px 4px;
+        font-size: 40px;
+        margin: auto;
+        text-decoration: overline;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration-color: gray;
+    }
+
+            .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+
+    .contact-info {
+    width: 30%;
+    margin-right: 20px;
+    }
+
+    .contact-info h3 {
+    margin: 0px;
+    font-size: 19px;
+    }
+
+    .contact-info p {
+    font-size: 16px;
+    margin:5px 0;
+    display: flex;
+    /* align-items: center; */
+    }
+
+    .contact-info i {
+    margin-right: 10px;
+    font-size: 48px;
+    }
+
+    .form-container {
+    width: 40%;
+    background-color: rgb(62,155,91,0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    }
+
+    form {
+    display: flex;
+    flex-direction: column;
+    }
+
+    label {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    }
+
+    input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    }
+
+    input:hover , textarea:hover{
+        background-color: #5c5b54;
+    }
+
+    button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+    button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+    }
+
+     </style>
+     <section class="Contact-Us">
+        <br> <br>
+        <h1> Get in touch with us..</h1>
+
+        <div class="container">
+            <div class="contact-info">
+                        <div class="address">
+                            <h3><i class="fas fa-map-marker-alt"></i> Our Address</h3>
+                            <p>Moscow, Street Khabarova, 2
+                                <br> Russia
+                            </p>
+                        </div>
+                        <div class="contact-number">
+                            <h3><i class="fas fa-phone-alt"></i> Contact No</h3>
+                            <p>8 (968) 822-00-60</p>
+                        </div>
+                        <div class="email"> 
+                            <h3><i class="fas fa-envelope"></i> Our Email</h3>
+                            <p>hello@gmail.com</p>
+                        </div>
+            </div>
+            
+            <div class="form-container">
+              <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+        
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" rows="4" required></textarea>
+        
+                <button type="submit">Send Request</button>
+              </form>
+            </div>
+          </div>
+    </section>
+    
+    <style>
+        #seperate {
+            width: 50%;
+            height: 10px;
+            color: black;
+            background: linear-gradient(to right, #ff7e5f, black);
+            box-shadow: black 10px 10px 10px;
+            
+        }
+    </style>
+
+    <hr id="seperate"> <br> <br>
+
+
+    <!--FAQs Section-->
+    <style>
+        
+        .FAQ {
+            /* overflow: hidden; */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+        }
+        .FAQ h1{
+            text-align: center;
+            /* margin-left: 30%; */
+            font-size: 30px;
+            font-weight: 200;
+            color: white;
+            text-decoration: overline;
+            text-shadow: black 5px 5px 10px;
+            width: 25%;
+            box-shadow: #183550 10px 10px 10px;
+            
+        }
+
+        .FAQ-content {
+            background-color: #bdccd2;
+            background-size: 100% 100%;
+        }
+
+        #hover2{
+            transform: scale(1.2);
+            transition: all 0s ease-out;
+            color: white;
+        }
+    
+        /* CREATING BOUNCE-RIGHT TRANSITION */
+            #hover2 {
+                background: linear-gradient(to right, #0d5a8a 50%, #0d5a8a 50%);
+                background-size: 200% 100%;
+                background-position: left;
+                border-radius:400px;
+                
+                }
+    
+            #hover2:hover{
+                background-position: right;
+                color: white;
+                width: 600px;
+                
+            }
+    </style>
+
+    
+    
+    <section class="FAQ">
+        <h1 id="hover2"> FAQs  Section</h1>
+        
+        <div class="FAQ-content">
+            <p> <br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+        </div>
+    </section>
+    <iframe id="footer" src="footer.html"></iframe>
+    
+    <!-- JavaScript for Tagline Rotation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const taglines = document.querySelectorAll(".tagline");
+            let currentTaglineIndex = 0;
+
+            function showTagline(index) {
+                taglines.forEach((tagline, i) => {
+                    tagline.style.display = i === index ? "block" : "none";
+                });
+            }
+
+            function rotateTaglines() {
+                currentTaglineIndex = (currentTaglineIndex + 1) % taglines.length;
+                showTagline(currentTaglineIndex);
+            }
+
+            // Initially show the first tagline
+            showTagline(currentTaglineIndex);
+
+            // Change tagline every 5 seconds
+            setInterval(rotateTaglines, 5000);
+        });
+
+        document.getElementById('hover2').addEventListener('mouseover', function() {
+        this.textContent = 'Your Queries, Simplified!';
+    });
+    
+    document.getElementById('hover2').addEventListener('mouseout', function() {
+        this.textContent = 'FAQs Section';
+    });
+    </script>
+</body>
+</html>
