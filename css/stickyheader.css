@@ -190,5 +190,8 @@ body {
     .s_hamburg{
         display: flex;
     }
+    .s-row{
+        margin: 0 2rem 0 2rem;
+    }
 
 }
