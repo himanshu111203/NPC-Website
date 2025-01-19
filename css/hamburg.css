@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    width: 275px;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .side_logo {
+    text-align: center;
+    margin: 0px 0 30px 0;
+  }
+  
+  .side_logo img {
+    max-width: 170px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  
+  
+  /* Navigation */
+  .side_nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .side_nav ul li {
+    margin: 10px 0;
+ 
+  }
+  
+  .side_nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    border-bottom: 1px solid rgba(160, 155, 155,0.2);
+  }
+  
+  .side_nav ul li a:hover,
+  .sidebar ul li a.active {
+    /* background-color: #0056b3; */
+    border: 1px solid black;
+    color: red;
+  }
+  
+  /* Contact Info */
+  .contact-info {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .contact-info strong {
+    color: #000;
+  }
+  
+  .contact-info button {
+    background-color: #0056b3;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .contact-info button:hover {
+    background-color: #004099;
+  }
+  
+
+
+
+
+
+
+  /* contact info */
+
+.side_info{
+    margin: 25px;
+    display: flex;
+}
+.side_icon{
+    
+    font-size: 25px;
+    align-self: center;
+    margin: 0 20px 0 0px;
+}
+.side_icon i{
+    background-image: linear-gradient(135deg, #003366, #00aaff);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.side_line1{
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.side_line2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+}
+.contact-info a{
+    text-decoration: none;
+}
+.contact-info a:visited{
+    color: black;
+}
+
+
+
+
+/* contact_button */
+.side-contact {
+    height: 50px;
+    margin: 10px 20px 10px 20px;
+    align-content: center;
+    padding: 0 2rem 0 2rem;
+    background: linear-gradient(to left, #0078b5,#1D3461);
+    transition: background 2s ease;
+    border-radius: 5px;
+    /* Gradient background */
+
+}
+
+.side-contact-button {
+    /* background: linear-gradient(to right, #0078b5, #005f99); Gradient background */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    
+    
+
+}
+
+.side-contact:hover {
+
+    background: linear-gradient(to left, #1D3461, #0078b5);
+    /* Reverse gradient on hover */
+}
