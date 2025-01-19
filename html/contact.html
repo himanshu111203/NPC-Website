@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+    <header>
+        <h1>What’s on your mind?</h1>
+        <p>We’re here to help! Tell us what you’re looking for and we’ll get you connected to the right people.</p>
+    </header>
+
+
+    <div class="container">
+        <div class = helpImg>
+            <img src="../images_rectruitment/image_reetruitment.jpg" alt="">
+        </div>
+        <form action="/submit" method="post">
+            <!-- <label for="firstName">First Name</label> -->
+            <input type="text" id="firstName" name="Name" placeholder="First name *" required>
+
+            <!-- <label for="lastName">Last Name</label> -->
+            <input type="text" id="lastName" name="Name" placeholder="Last name *" required>
+
+            <!-- <label for="">Phone Number</label> -->
+            <input type="number" id="phone" name="Phone No." placeholder="Phone number *" required>
+
+            <!-- <label for="email">Email</label> -->
+            <input type="email" name="Email" id="email" placeholder="Your mail *">
+
+            <!-- <label for="message">Message</label> -->
+            <textarea name="Message" id="message" cols="40" rows="6" placeholder="Your message here..."
+                required></textarea>
+
+            <button type="submit">Send now</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
