@@ -48,7 +48,7 @@ p {
 }
 
 .logo img {
-    max-width: 250px;
+    max-width: 150px; /* Reduced logo size */
     margin-bottom: 10px;
 }
 
@@ -93,6 +93,38 @@ ul {
     margin-right: 0%;
     line-height: 25px;
 }
+
+.elementor-widget-container p {
+    margin: 0;
+}
+
+.elementor-widget-container a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.elementor-widget-container a:hover {
+    text-decoration: underline;
+}
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .elementor-widget-container {
+        font-size: 12px; /* Slightly smaller font size */
+        padding: 8px 0; /* Reduced padding */
+        line-height: 22px; /* Adjust line height */
+    }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .elementor-widget-container {
+        font-size: 10px; /* Even smaller font size for mobile */
+        padding: 6px 0; /* Reduced padding */
+        line-height: 20px; /* Adjust line height */
+    }
+}
+
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
