@@ -679,7 +679,7 @@ body {
 .sidebar{
     z-index: 3;
     position: fixed;
-    left: -100%;
+    left: -200%;
     transition: left 0.8s ease;
 
     
@@ -716,3 +716,14 @@ body {
       display: none;
     }
   }
+
+
+  @media only screen and (min-width:1200px) {
+    .top_bar {
+      display: none;
+    }
+    .sidebar{
+      left: -200%;
+    }
+  }
+

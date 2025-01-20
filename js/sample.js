@@ -3,9 +3,9 @@ let data = document.querySelector(".sidebar")
 hamburg1.addEventListener("click", () => {
     data.classList.toggle("showHamburg");
   
-    console.log(data)
+    // console.log(data)
    
-    if (data.classList.contains("showData")) {
+    if (data.classList.contains("showHamburg")) {
         document.getElementById("header_menu_bar").className = "fa-solid fa-xmark"; // Change to xmark icon
     } else {
         document.getElementById("header_menu_bar").className = "fa-solid fa-bars"; // Change to bars icon
@@ -38,11 +38,11 @@ let hamburg2 = document.querySelector(".s_hamburg");
 hamburg2.addEventListener("click", () => {
     data.classList.toggle("showHamburg");
   
-    console.log(data)
+    // console.log(data)
    
-    if (data.classList.contains("showData")) {
-        document.getElementById("header_menu_bar").className = "fa-solid fa-xmark"; // Change to xmark icon
+    if (data.classList.contains("showHamburg")) {
+        document.getElementById("s_menu_bar").className = "fa-solid fa-xmark"; // Change to xmark icon
     } else {
-        document.getElementById("header_menu_bar").className = "fa-solid fa-bars"; // Change to bars icon
+        document.getElementById("s_menu_bar").className = "fa-solid fa-bars"; // Change to bars icon
     }
 })
