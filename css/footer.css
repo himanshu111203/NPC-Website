@@ -23,14 +23,16 @@ body, html {
     text-decoration: none;
     font-size: 16px;
 }
+
 p {
     font-size: 16px;
 }
+
 .upperfooter {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
 }
 
@@ -92,3 +94,48 @@ ul {
     line-height: 25px;
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .upperfooter {
+        flex-direction: column; /* Stack the sections vertically on smaller screens */
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .links-1, .links-2, .info {
+        margin-left: 0;
+        margin-top: 20px;
+        flex: none;
+    }
+
+    .nav-item img {
+        height: 20px; /* Smaller icon size on mobile */
+    }
+
+    p {
+        font-size: 14px; /* Smaller font size for copyright text */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        max-width: 150px; /* Smaller logo on very small screens */
+    }
+
+    h4 {
+        font-size: 16px; /* Smaller font for headings */
+    }
+
+    .nav-item a {
+        font-size: 14px; /* Smaller text for links */
+    }
+
+    .elementor-widget-container {
+        padding: 8px 0; /* Reduce padding for very small screens */
+    }
+}
