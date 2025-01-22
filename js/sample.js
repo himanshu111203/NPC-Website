@@ -6,9 +6,9 @@ hamburg1.addEventListener("click", () => {
     // console.log(data)
    
     if (data.classList.contains("showHamburg")) {
-        document.getElementById("header_menu_bar").className = "fa-solid fa-xmark"; // Change to xmark icon
+        document.getElementById("header_menu_bar").src = "../images/remove.png"; // Change to xmark icon
     } else {
-        document.getElementById("header_menu_bar").className = "fa-solid fa-bars"; // Change to bars icon
+        document.getElementById("header_menu_bar").src = "../images/menu.png"; // Change to bars icon
     }
 })
 
@@ -41,8 +41,8 @@ hamburg2.addEventListener("click", () => {
     // console.log(data)
    
     if (data.classList.contains("showHamburg")) {
-        document.getElementById("s_menu_bar").className = "fa-solid fa-xmark"; // Change to xmark icon
+        document.getElementById("s_menu_bar").src = "../images/remove.png"; // Change to xmark icon
     } else {
-        document.getElementById("s_menu_bar").className = "fa-solid fa-bars"; // Change to bars icon
+        document.getElementById("s_menu_bar").src = "../images/menu.png"; // Change to bars icon
     }
 })
