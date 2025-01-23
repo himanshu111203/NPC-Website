@@ -13,10 +13,6 @@
             margin: 0;
         }
 
-        input[type="number"] {
-            -moz-appearance: textfield;
-        }
-
         textarea {
             resize: none;
         }
@@ -24,36 +20,48 @@
 </head>
 
 <body>
-    <header>
+    <div class="head">
         <h1>What’s on your mind?</h1>
         <p>We’re here to help! Tell us what you’re looking for and we’ll get you connected to the right people.</p>
-    </header>
-
+    </div>
 
     <div class="container">
-        <div class = helpImg>
-            <img src="../images_rectruitment/image_reetruitment.jpg" alt="">
+        <div class="col-1">
+            <img src="../images_rectruitment/image_reetruitment.jpg" class="Img-Help">
         </div>
-        <form action="/submit" method="post">
-            <!-- <label for="firstName">First Name</label> -->
-            <input type="text" id="firstName" name="Name" placeholder="First name *" required>
+        <div class="col-2">
+            <form action="/submit" method="post">
 
-            <!-- <label for="lastName">Last Name</label> -->
-            <input type="text" id="lastName" name="Name" placeholder="Last name *" required>
+                <div class="form-name">
+                    <!-- <label for="firstName">First Name</label> -->
+                    <input type="text" id="firstName" name="Name" placeholder="First name *" required>
 
-            <!-- <label for="">Phone Number</label> -->
-            <input type="number" id="phone" name="Phone No." placeholder="Phone number *" inputmode="numeric" required>
+                    <!-- <label for="lastName">Last Name</label> -->
+                    <input type="text" id="lastName" name="Name" placeholder="Last name *" required>
+                </div>
 
-            <!-- <label for="email">Email</label> -->
-            <input type="email" name="Email" id="email" placeholder="Your mail *">
+                <div class="form-contact">
+                    <!-- <label for="">Phone Number</label> -->
+                    <input type="number" id="phone" name="Phone No." placeholder="Phone number *" inputmode="numeric"
+                        required>
 
-            <!-- <label for="message">Message</label> -->
-            <textarea name="Message" id="message" cols="40" rows="6" placeholder="Your message here..."
-                required></textarea>
+                    <!-- <label for="email">Email</label> -->
+                    <input type="email" name="Email" id="email" placeholder="Your mail *">
+                </div>
 
-            <button type="submit">Send now</button>
-        </form>
+                <div class="form-msg">
+                    <!-- <label for="message">Message</label> -->
+                    <textarea name="Message" id="message" cols="" rows="4" placeholder="Your message here..."
+                        required></textarea>
+                </div>
+                <button type="submit">Send now</button>
+            </form>
+        </div>
+
     </div>
+
+
+
 
 </body>
 

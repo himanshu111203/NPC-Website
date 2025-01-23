@@ -2,37 +2,70 @@ body {
     margin: 0;
     padding: 0;
     font-family: Roboto, sans-serif;
-    
+
 }
 
-header {
+.head {
     text-align: center;
     padding: 1rem 2rem;
     color: white;
     background-color: rgb(28, 28, 28);
 }
 
+
+form .form-name {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+
+form .form-contact {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+
+form .form-msg {
+    display: flex;
+}
+
 .container {
+    scale: 1.2;
     display: flex;
-    max-width: 1100px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    align-items: center;
+    margin: 110px auto;
+    padding: 2%;
+    background-color: rgb(46, 46, 46);
+    border-radius: 10px;
+    max-width: 950px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-.helpImg {
-    padding: 1rem;
-}
-
-form {
+.col-1 {
+    position: relative;
     display: flex;
-    flex-direction: column;
+    flex-basis: 40%;
+    align-items: center;
+    margin-left: 50px;
 }
 
+.col-2 {
+    position: relative;
+    display: flex;
+    flex-basis: 60%;
+    align-items: center;
+    margin-left: 30px;
+}
 
-input, textarea {
+.col-1 .Img-Help {
+    border-radius: 5px;
+    width: 100%;
+    scale: 1.05;
+}
+
+input,
+textarea {
     width: 100%;
     padding: 0.8rem;
     margin-bottom: 1rem;
@@ -41,16 +74,43 @@ input, textarea {
     font-size: 1rem;
 }
 
-button {
+form button {
     background-color: #007BFF;
     color: white;
     border: none;
-    padding: 0.8rem;
+    padding: 2%;
     font-size: 1rem;
     border-radius: 4px;
     cursor: pointer;
+    width: 100%;
 }
 
-button:hover {
+form button:hover {
     background-color: #0056b3;
+    scale: 1.05;
+}
+
+input:hover,
+textarea:hover {
+    border-color: red;
+    scale: 1.05;
+}
+
+
+@media only screen and (max-width:700px) {
+    .container {
+        flex-direction: column;
+        scale: 0.9;
+        margin: 30px auto;
+        padding: 2%;
+        max-height: fit-content;
+    }
+
+    .col-1 {
+        margin: 30px;
+    }
+
+    .col-2 {
+        margin: 30px;
+    }
 }
