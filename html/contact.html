@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
     <link rel="stylesheet" href="../css/contact.css">
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+
+        textarea {
+            resize: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,7 +42,7 @@
             <input type="text" id="lastName" name="Name" placeholder="Last name *" required>
 
             <!-- <label for="">Phone Number</label> -->
-            <input type="number" id="phone" name="Phone No." placeholder="Phone number *" required>
+            <input type="number" id="phone" name="Phone No." placeholder="Phone number *" inputmode="numeric" required>
 
             <!-- <label for="email">Email</label> -->
             <input type="email" name="Email" id="email" placeholder="Your mail *">
