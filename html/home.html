@@ -10,11 +10,12 @@
     <style>
 
         @import url('https://fonts.googleapis.com/css2?family=Andika:wght@100;200;300;400;500;600;700;800;900&display=swap');
-        
+        @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+VN:wght@100..400&display=swap'); 
         
         iframe { border: none; width: 100%; }
-        #header { height: 146px;}
-        #footer { height: 549px;}
+        #header { height: 149px;}
+        #footer { height: 315px;}
+        #navbar {height: 70px;}
         
         
         
@@ -185,7 +186,7 @@
         }
 
         /* Responsive Design */
-        @media (max-width: 768px) {
+        /* @media (max-width: 768px) {
             .welcome-content {
                 flex-direction: column;
             }
@@ -197,7 +198,7 @@
             .fact {
                 width: 100%;
             }
-        }
+        } */
     </style>
 
 <body>
@@ -351,6 +352,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
+    
 }
 
 .choose-us-column {
@@ -358,37 +360,43 @@
     background-color: #183550;
     color: white;
     padding: 20px;
-    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 100px;
+    border-radius: 200px;
     transition: all 0.3s ease;
+    overflow: hidden;
 
 }
 
 .choose-us-column h3 {
-    font-size: 29px;
+    font-size: 19px;
     margin-bottom: 10px;
     font-weight: bold;
     box-shadow: white 5px 5px 50px;
+    
     
 }
 
 .choose-us-column p {
     font-size: 16px;
     color: #f9f9f9;
-    line-height: 1.6;
-    font-family: Segoe Print;   
+    line-height: 1.6;   
+    font-family: "IBM Plex Sans";
 }
 
 .choose-us-column:hover {
-    box-shadow: 0 0 20px 5px black;
+    box-shadow: 0 20px 20px 10px #6a5f55;
     animation: sparkle 1s infinite;
     transform: translateY(-100px); /* Moves the element slightly upwards */
+    overflow: hidden;
+}
+
+.choose-us-division {
+    background-color: rgb(0,0,0,0.1);
 }
 </style>
-        <div>
+        <div class="choose-us-division">
         <!--Why choose us-->
-        <h1 id="hover1"> Why Choose Us?</h1> 
+        <h1 style="background-color: #073965; color: white; font-size: 30px;"> Why Choose Us?</h1> 
         <hr id="underline"> <br><br>
         
             <div class="choose-us-container">
@@ -406,8 +414,10 @@
                     <p>We offer flexible collaboration terms that cater to your needs. Our process is streamlined for maximum efficiency, making it easy for you to work with us and achieve your goals.</p>
                 </div>
             </div>
+            <br>
         </div>
-
+        
+       
         <div>
         <!--Testimonals-->
         <h1 id="hover1"> Testimonals </h1>
@@ -437,6 +447,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    transform: scale(0.9);
     }
 
     .contact-info {
@@ -463,11 +474,11 @@
 
     .form-container {
     width: 40%;
-    background-color: rgb(62,155,91,0.5);
+    background-color: rgb(197,218,226,0.3);
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0,0.2);
     border-radius: 100%;
+    height: 500px;
     }
 
     form {
@@ -488,12 +499,12 @@
     }
 
     input:hover , textarea:hover{
-        background-color: #5c5b54;
+        background-color: #c5dae2;
     }
 
     button {
     padding: 12px;
-    background-color: #4CAF50;
+    background-color: #0474ac;
     color: white;
     font-size: 18px;
     border: none;
@@ -502,7 +513,7 @@
     }
 
     button:hover {
-    background-color: #45a049;
+    background-color: #04588d;
     transform: scale(1.1);
     }
     
@@ -545,7 +556,7 @@
             
             <div class="form-container">
               <form>
-                <label for="name">Name:</label>
+                <label for="name">Full Name:</label>
                 <input type="text" id="name" required>
         
                 <label for="phone">Phone:</label>
@@ -615,15 +626,12 @@
                 background-size: 200% 100%;
                 background-position: left;
                 border-radius:400px;
+                width: 600px;
                 
                 }
     
-            #hover2:hover{
-                background-position: right;
-                color: white;
-                width: 600px;
+    
                 
-            }
     </style>
 
     
@@ -661,13 +669,30 @@
             setInterval(rotateTaglines, 5000);
         });
 
-        document.getElementById('hover2').addEventListener('mouseover', function() {
-        this.textContent = 'Your Queries, Simplified!';
-    });
+    //     document.getElementById('hover2').addEventListener('mouseover', function() {
+    //     this.textContent = 'Your Queries, Simplified!';
+    // });
     
-    document.getElementById('hover2').addEventListener('mouseout', function() {
-        this.textContent = 'FAQs Section';
-    });
+    // document.getElementById('hover2').addEventListener('mouseout', function() {
+    //     this.textContent = 'FAQs Section';
+
+        
+    // });
+
+    // Script to animate the FAQs Section Heading
+    var myDiv = document.getElementById("hover2");
+var messages = ["FAQs Section","Your Queries, Simplified!"];
+var i = 0;
+
+function changeText() {
+  myDiv.textContent = messages[i];
+  i = (i + 1) % messages.length; 
+}
+
+changeText();
+
+setInterval(changeText, 5000);
+
     </script>
 </body>
 </html>
