@@ -1,0 +1,186 @@
+/*
+font-color --
+-#555 (default)
+-#444
+-#333 (secondary-heading)
+
+font-size --
+-40px (primary heading)
+-36px (secondary heading)
+-1.6rem
+-1.2rem
+
+Theme -- 
+#00a0cc
+red
+
+border-radius --
+11px
+20px(team cards)
+
+font-family --
+Poppins (Google Fonts)
+Sans-Serif (Default)
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.heading-primary {
+  color: black;
+  font-size: 4rem;
+}
+
+.heading-secondary {
+  font-size: 3.6rem;
+}
+
+.heading-tertiary {
+}
+
+.padding--right-left {
+  padding-left: 18rem;
+  padding-right: 18rem;
+}
+
+.container {
+  padding-bottom: 2rem;
+}
+
+.heading-teams-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(../images/background-meeting.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 65%;
+  background-size: cover;
+  background-blend-mode: darken;
+  height: 37rem;
+}
+
+.heading-teams-text .heading-primary {
+  text-align: center;
+  padding-top: 10rem;
+  color: white;
+}
+
+.sub-heading {
+  color: white;
+  font-size: 1.6rem;
+  margin-top: 1.5rem;
+  padding-bottom: 10rem;
+  text-align: center;
+  text-align: align;
+  font-weight: 500;
+}
+
+.home-link:link,
+.home-link:visited {
+  color: white;
+  text-decoration: none;
+  font-style: inherit;
+  transition: all 0.5s ease;
+}
+
+.home-link:hover,
+.home-link:hover {
+  color: red;
+  transform: scale(1.1);
+}
+
+/* ************************* */
+/* *****Cards-Section******* */
+/* ************************* */
+
+.teams-heading {
+  padding-bottom: 0.7rem;
+  margin-top: 4rem;
+  color: #333;
+  border-bottom: #333333;
+  display: inline-block;
+  position: relative;
+}
+
+.teams-heading::before {
+  content: "";
+  position: absolute;
+  margin-left: 18.5rem;
+  border-radius: 20px;
+  bottom: -0.5rem;
+  left: 0;
+  width: 14rem;
+  height: 2.5px;
+  background: linear-gradient(to right, #000, #00a0cc 90%);
+}
+
+/* *********************** */
+/* ******Teams-Cards****** */
+/* *********************** */
+
+.teams-images-grid {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 4rem;
+}
+
+.team-card {
+  justify-self: center;
+  box-shadow: 0 0.7rem 0.9rem 0.3rem rgba(0, 0, 0, 0.2);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.team-card .card-link,
+.person-name,
+.card-content p {
+  text-decoration: none;
+  color: inherit;
+}
+
+.team-card:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 1.7rem 0.9rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+
+.team-image {
+  height: 25rem;
+  padding-bottom: 2.5rem;
+}
+
+.person-name {
+  padding-bottom: 1.8rem;
+  padding-left: 1.5rem;
+  color: #444;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.person-name:hover {
+  color: #00a0cc;
+}
+
+.card-content p {
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
+  color: #555;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}

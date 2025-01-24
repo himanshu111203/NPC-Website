@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.heading-primary {
+  color: black;
+  font-size: 4rem;
+}
+
+.heading-secondary {
+  font-size: 3.6rem;
+}
+
+.heading-tertiary {
+}
+
+.padding--right-left {
+  padding-left: 18rem;
+  padding-right: 18rem;
+}
+
+.container {
+  padding-bottom: 2rem;
+}
+
+.heading-policy-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(../images/bg-img-3.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 35%;
+  background-size: cover;
+  background-blend-mode: darken;
+  height: 37rem;
+}
+
+.heading-policy-text .heading-primary {
+  text-align: center;
+  padding-top: 10rem;
+  color: white;
+}
+
+.sub-heading {
+  color: white;
+  font-size: 1.6rem;
+  margin-top: 1.5rem;
+  padding-bottom: 10rem;
+  text-align: center;
+  text-align: align;
+  font-weight: 500;
+}
+
+.home-link:link,
+.home-link:visited {
+  color: white;
+  text-decoration: none;
+  font-style: inherit;
+  transition: all 0.5s ease;
+}
+
+.home-link:hover,
+.home-link:hover {
+  color: red;
+  transform: scale(1.1);
+}
+
+/* *********************** */
+/* ****Policy-Content***** */
+/* *********************** */
+
+.policy-heading {
+  padding-bottom: 0.7rem;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  color: #333;
+  border-bottom: #333333;
+  display: inline-block;
+  position: relative;
+}
+
+.policy-heading::before {
+  content: "";
+  position: absolute;
+  margin-left: 19rem;
+  border-radius: 20px;
+  bottom: -0.5rem;
+  left: 0;
+  width: 14rem;
+  height: 2.5px;
+  background: linear-gradient(to right, #000, #00a0cc 90%);
+}
+
+.policy-para {
+  font-size: 1.7rem;
+  /* text-align: center; */
+  line-height: 2;
+}

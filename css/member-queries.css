@@ -1,0 +1,35 @@
+@media (max-width: 78em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 63em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .padding--right-left {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
+@media (max-width: 56em) {
+  .padding--right-left {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (max-width: 42em) {
+  .member-data {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .member-data {
+    flex-direction: column;
+  }
+}

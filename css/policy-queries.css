@@ -1,0 +1,31 @@
+@media (max-width: 68.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 53.25em) {
+  .padding--right-left {
+    padding-right: 8rem;
+    padding-left: 8rem;
+  }
+
+  .policy-heading::before {
+    margin-left: 9rem;
+  }
+}
+
+@media (max-width: 35em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .padding--right-left {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+
+  .policy-heading::before {
+    margin-left: 6rem;
+  }
+}
