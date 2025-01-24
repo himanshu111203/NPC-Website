@@ -46,29 +46,28 @@ body{
     /* opacity: 1; */
     transition: opacity ease 250ms;
 }
- #mainimage101{
-        position: absolute;
-        top:175px;
-        height: 450px;
-        width: 100vw;
-   }
-   
-
+#imagebg{
+    background-image: url(../images_industries/image1main.webp);
+    position: absolute;
+    top:175px;
+    height: 450px;
+    width: 100%;
+}
 #pagedesc{
     position: absolute;
-    left:45vw;
+    left:44%;
     color: white;
     font-size: 35px;
     font-weight: bolder;
-    top:46vh;
+    top:160px;
 }
 #padedesc_2{
     position: absolute;
-    left:47vw;
+    left:49%;
     color: white;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bolder;
-    top:60vh;
+    top:290px;
 
 }
 #bg-image{
@@ -126,38 +125,4 @@ body{
     font-size: larger;
     font-weight: bolder;
     width:150px;
-}
-@media  (max-width:1000px){
-    #pagedesc{
-        font-size:25px;
-        position: absolute;
-        left:46vw;
-        top:50vh;
-    }
-    #padedesc_2{
-        font-size:20px;
-        position: absolute;
-        left:48vw;
-        top:61vh;
-        gap:12rem;
-    }
-    .gridbox{
-        grid-template-columns: repeat(2,auto);
-        
-    }
-    #paper_logo {
-        position: absolute;
-        left:50vw;
-    }
-    #item9_desc{
-        position: absolute;
-        left:50vw;
-        top:15vh
-    }
-    
-}
-@media (max-width :500px){
-    .gridbox{
-    grid-template-columns: repeat(1,auto);
-    }
 }
