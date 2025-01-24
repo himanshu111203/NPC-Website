@@ -240,11 +240,11 @@ body {
 }
 
 #banner button{
-    background-color: #818ea0;
+    background-color: #088178;
 }
 
 #banner button:hover{
-    background-color: #088178;
+    background-color: #818ea0;
     color: #fff;
 }
 
