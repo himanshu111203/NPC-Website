@@ -99,6 +99,7 @@ body {
 
 #hover1:hover {
     background-color: #183550;
+    height: 80px;
     color: white;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
