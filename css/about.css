@@ -251,7 +251,7 @@ body {
 .feature .fe-box:hover{
     box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
     transform: scale(1.1); /* Zoom in */
-    background-color: #818ea0; /* Change background color */
+    background-color: #bdccd2; /* Change background color */
 }
 
 .feature .fe-box img{
