@@ -147,6 +147,11 @@
             transform: scale(0.95);
         }
 
+        .welcome-section img{
+            background-color: rgb(235,243,251,0.3);
+            backdrop-filter: blur(10px);
+        }
+
         .welcome-section h1 {
             color: #183550;
             text-decoration: overline;
@@ -226,7 +231,7 @@
         }
 
         /* Responsive Design */
-        /* @media (max-width: 768px) {
+        @media (max-width: 768px) {
             .welcome-content {
                 flex-direction: column;
             }
@@ -238,7 +243,130 @@
             .fact {
                 width: 100%;
             }
-        } */
+
+            body {
+                width: 100%; 
+            }
+
+            .tagline p {
+                font-size: 50% !important;
+
+            }
+            #tagline-1 p  {
+                margin: 3em;
+                }
+            #tagline-2 p {
+                margin: 1em;
+                padding-top: 4em;
+                }
+            
+            .facts-section {
+                padding: 0px;
+                overflow: hidden;
+                transform: scale(0.9);
+                
+            }
+            .fact {
+                width: auto;
+            }
+            .fact p {
+                display: flex;
+                margin: auto;
+                text-align: justify;
+            }
+
+            .welcome-section h1 {
+                font-size: 160%;
+                background-color: rgb(235,243,251,0.3);
+                backdrop-filter: blur(10px);
+            }
+
+            .welcome-section {
+                height: auto;
+                overflow: hidden;
+                width: 90% !important;
+            }
+            .welcome-content {
+            display: flex;
+            flex-direction: column;
+            
+            }
+
+            .welcome-section img {
+                width: 128%;
+                background-color: inherit;
+                border-radius: 35%;
+            }
+
+            .welcome-text {
+                font-size: 78%;
+                border-radius: 25%;
+                box-shadow: rgb(0,0,0,0.2) 30px 30px 30px;
+                margin-top: 5%;
+            }
+            
+            .others p{
+                flex-direction: column;
+                text-align: justify;
+            }
+
+            .choose-us-column p {
+                font-size: 75% !important;
+                text-align: justify;
+            }
+            
+            .choose-us-container {
+                flex-direction: column;
+                
+            }
+
+            .choose-us-column {
+                width: auto !important;
+                height: auto;
+                border-radius: 0% !important;
+            }
+
+            .container {
+                width: 100% !important;
+                display: flex;
+            }
+
+            .FAQ h1 {
+                width: 75% !important;
+                font-size: 100% !important;
+            }
+
+            #navbar {
+                display: none;
+            }
+   }
+
+   @media only screen and (max-width: 1024px) and (min-width: 812px) {
+    
+    #tagline-3 p {
+        font-size: 70% !important;
+    }
+    
+    .choose-us-column {
+        width: 40% !important;
+        border-radius: 150px !important;
+  }
+  .welcome-section {
+    height: auto;
+  }
+  .welcome-content {
+    flex-direction: column;
+  }
+  .welcome-section img {
+    width: 75%;
+  }
+
+  .welcome-text {
+    box-shadow: rgb(0,0,0,0.2) 30px 30px 30px;
+  }
+  }
+
+
     </style>
 
 <body>
@@ -395,6 +523,7 @@
     
 }
 
+
 .choose-us-column {
     width: 45%;
     background-color: #183550;
@@ -431,7 +560,7 @@
 }
 
 .choose-us-division {
-    background-color: rgb(0,0,0,0.1);
+    background-color: rgb(235,243,251);
 }
 </style>
         <div class="choose-us-division">
@@ -650,7 +779,7 @@
         }
 
         .FAQ-content {
-            background-color: #bdccd2;
+            background-color: #ebf3fb;
             background-size: 100% 100%;
         }
 
