@@ -5,7 +5,7 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-.container {
+.footer-container {
     width: 100%;
     background-color: #003366;
     padding: 5px;
@@ -24,11 +24,11 @@ body, html {
     font-size: 16px; /* Default font size */
 }
 
-p {
+.footer p {
     font-size: 16px;
 }
 
-.upperfooter {
+.footer-upperfooter {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -37,7 +37,7 @@ p {
 }
 
 /* Logo Section */
-.logo {
+.footer-logo {
     display: flex;
     flex-direction: column; /* Stacks the logos vertically */
     align-items: center; /* Centers the logos horizontally */
@@ -47,42 +47,42 @@ p {
     gap: 10px; /* Reduced space between logos */
 }
 
-.logo img {
+.footer-logo img {
     max-width: 150px; /* Reduced logo size */
     margin-bottom: 10px;
 }
 
 /* Links Section */
-.links-1, .links-2, .info {
+.footer-links-1, .footer-links-2, .footer-info {
     flex: 1;
 }
 
-h4 {
+.footer h4 {
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
 }
 
-ul {
+.footer ul {
     list-style-type: none;
     padding-left: 0;
     margin-left: 0; /* Removed left margin */
 }
 
-.nav-item {
+.footer-nav-item {
     display: flex;
     align-items: center;
     margin-bottom: 8px;
 }
 
-.nav-item img {
+.footer-nav-item img {
     margin-right: 8px;
     width: auto;
     height: 25px;
 }
 
 /* Footer Year and Copyright */
-.elementor-widget-container {
+.footer-elementor-widget-container {
     text-align: center;
     font-size: 14px;
     color: #fff;
@@ -94,22 +94,22 @@ ul {
     line-height: 25px;
 }
 
-.elementor-widget-container p {
+.footer-elementor-widget-container p {
     margin: 0;
 }
 
-.elementor-widget-container a {
+.footer-elementor-widget-container a {
     color: #fff;
     text-decoration: none;
 }
 
-.elementor-widget-container a:hover {
+.footer-elementor-widget-container a:hover {
     text-decoration: underline;
 }
 
 /* For tablets (max-width: 768px) */
 @media (max-width: 768px) {
-    .elementor-widget-container {
+    .footer-elementor-widget-container {
         font-size: 12px; /* Slightly smaller font size */
         padding: 8px 0; /* Reduced padding */
         line-height: 22px; /* Adjust line height */
@@ -118,42 +118,41 @@ ul {
 
 /* For mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
-    .elementor-widget-container {
+    .footer-elementor-widget-container {
         font-size: 10px; /* Even smaller font size for mobile */
         padding: 6px 0; /* Reduced padding */
         line-height: 20px; /* Adjust line height */
     }
 }
 
-
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .upperfooter {
+    .footer-upperfooter {
         flex-direction: column; /* Stack sections vertically */
         align-items: flex-start; /* Align to left */
         text-align: left; /* Left-align text */
         gap: 15px; /* Adjusted gap */
     }
 
-    .logo {
+    .footer-logo {
         align-items: flex-start; /* Align logos to the left */
         margin-left: 0;
         margin-top: 20px;
         margin-bottom: 20px;
     }
 
-    .links-1, .links-2, .info {
+    .footer-links-1, .footer-links-2, .footer-info {
         margin-left: 0;
         margin-top: 20px;
         flex: none;
         text-align: left; /* Left-align link text */
     }
 
-    .nav-item img {
+    .footer-nav-item img {
         height: 20px; /* Smaller icon size on mobile */
     }
 
-    p {
+    .footer p {
         font-size: 14px; /* Smaller font size for copyright text */
     }
 }
@@ -161,11 +160,11 @@ ul {
 @media (max-width: 480px) {
     /* Ensure everything is left-aligned on very small screens */
     body {
-        text-align: left;  /* Align body text to the left */
+        text-align: left; /* Align body text to the left */
         padding: 0;
     }
 
-    .footer, .upperfooter, .logo {
+    .footer, .footer-upperfooter, .footer-logo {
         margin: 0;
         padding: 0;
     }
@@ -174,25 +173,25 @@ ul {
         text-align: left; /* Left-align footer text */
     }
 
-    .upperfooter {
+    .footer-upperfooter {
         flex-direction: column; /* Stack items vertically */
         align-items: flex-start; /* Align items to the left */
-        text-align: left;  /* Left-align the text */
+        text-align: left; /* Left-align the text */
     }
 
-    .logo {
+    .footer-logo {
         align-items: flex-start; /* Align logos to the left */
     }
 
-    .logo img {
+    .footer-logo img {
         max-width: 200px; /* Smaller logo on very small screens */
     }
 
-    h4 {
+    .footer h4 {
         font-size: 16px; /* Smaller font for headings */
     }
 
-    .nav-item a {
+    .footer-nav-item a {
         font-size: 14px; /* Smaller text for links */
     }
 
@@ -200,7 +199,7 @@ ul {
         font-size: 14px; /* Adjust font size for links on mobile */
     }
 
-    ul {
+    .footer ul {
         margin-left: 0; /* Removed any left margin for smaller screens */
     }
 }
