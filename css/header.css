@@ -1,59 +1,90 @@
-
-header{
-    width: 100%;
-    background-color: white;
+header {
+  width: 100%;
+  background-color: white;
 }
 .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: white
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+  background-color: white;
 }
 
-.logo {
-    /* margin: 10px; */
-    display: flex;
-    align-items: center;
+.row:first-child {
+  padding-right: auto;
 }
 
-.logo img {
-    height: 50px;
-    
+.logo-link img {
+  /* margin: 10px; */
+  align-items: center;
+  height: 50px;
+  width: auto;
 }
-.holder{
-    display: flex;
-}
-.info{
-    margin: 0 20px 0 20px;
-    display: flex;
-}
-.icon{
-    
-    font-size: 35px;
-    margin: 0 20px 0 20px;
-}
-.icon img{
-    background-image: linear-gradient(135deg, #003366, #00aaff);
-    background-clip: border-box;
-    -webkit-background-clip: text ;
-    /* color: transparent; */
-    height: 45px;
-    width: 45px;
 
+.logo-link:link,
+.logo-link:visited {
+  font-family: sans-serif;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 0.5;
+  transition: all 0.5s ease;
 }
-.line1{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 700;
-    font-size: 1.1rem;
+
+.logo-link:hover,
+.logo-link:active {
+  color: #666;
 }
-.line2{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 200;
+
+.logo-text {
+  text-align: center;
 }
-a{
-    text-decoration: none;
+
+.logo-subtext {
+  font-weight: 530;
+  color: #444;
+  text-align: center;
 }
-a:visited{
-    color: black;
+
+.holder {
+  display: flex;
+}
+.info {
+  margin: 0 20px 0 20px;
+  display: flex;
+}
+.icon {
+  font-size: 35px;
+  margin: 0 20px 0 20px;
+}
+.icon img {
+  background-image: linear-gradient(135deg, #003366, #00aaff);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  /* color: transparent; */
+  height: 45px;
+  width: 45px;
+}
+.line1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.line2 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 200;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: black;
 }
