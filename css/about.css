@@ -207,6 +207,8 @@ body {
     margin-bottom: 20px; /* Increase spacing */
 }
 
+
+/* 
 #newsletter{
     display: flex;
     justify-content: space-between;
@@ -255,7 +257,7 @@ body {
     white-space: nowrap;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-}
+} */
 
 .reveal {
     opacity: 0;

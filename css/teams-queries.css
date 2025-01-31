@@ -1,15 +1,17 @@
-@media (max-width: 55em) {
+@media (max-width: 64em) {
   html {
-    font-size: 50%;
+    font-size: 80%;
   }
+}
 
+@media (max-width: 55em) {
   .padding--right-left {
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .teams-heading::before {
-    margin-left: 13.5rem;
+    margin-left: 3.5rem;
   }
 }
 
@@ -19,12 +21,12 @@
   } */
 
   .padding--right-left {
-    padding-left: 7rem;
-    padding-right: 7rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .teams-heading::before {
-    margin-left: 10.5rem;
+    margin-left: 3rem;
   }
 
   .teams-images-grid {

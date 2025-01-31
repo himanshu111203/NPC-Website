@@ -1,17 +1,17 @@
 @media (max-width: 68.5em) {
   html {
-    font-size: 50%;
+    font-size: 80%;
   }
 }
 
 @media (max-width: 53.25em) {
   .padding--right-left {
-    padding-right: 8rem;
-    padding-left: 8rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
   }
 
   .policy-heading::before {
-    margin-left: 9rem;
+    margin-left: 4rem;
   }
 }
 
@@ -21,11 +21,11 @@
   }
 
   .padding--right-left {
-    padding-right: 5rem;
-    padding-left: 5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
 
   .policy-heading::before {
-    margin-left: 6rem;
+    margin-left: 2rem;
   }
 }
