@@ -271,9 +271,7 @@ body {
 }
 
 
-
-
-
+/*media*/
 @media (max-width: 768px) {
     .feature {
         justify-content: center;
