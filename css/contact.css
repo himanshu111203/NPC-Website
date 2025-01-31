@@ -31,7 +31,7 @@ body {
 .container {
     margin: 1rem;
     display: flex;
-    background-color: rgb(12, 12, 12);
+    background-color: #1c1c1c;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
