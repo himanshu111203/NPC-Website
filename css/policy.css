@@ -5,8 +5,8 @@
 }
 
 html {
-  font-size: 62.5%;
   scroll-behavior: smooth;
+  /* font-size: 62.5%;   */
 }
 
 body {
@@ -18,23 +18,23 @@ body {
 
 .heading-primary {
   color: black;
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 .heading-secondary {
-  font-size: 3.6rem;
+  font-size: 2.25rem;
 }
 
 .heading-tertiary {
 }
 
 .padding--right-left {
-  padding-left: 18rem;
-  padding-right: 18rem;
+  padding-left: 11.25rem;
+  padding-right: 11.25rem;
 }
 
 .container {
-  padding-bottom: 2rem;
+  padding-bottom: 1.25rem;
 }
 
 .heading-policy-container {
@@ -44,20 +44,20 @@ body {
   background-position: 100% 35%;
   background-size: cover;
   background-blend-mode: darken;
-  height: 37rem;
+  height: 23.125rem;
 }
 
 .heading-policy-text .heading-primary {
   text-align: center;
-  padding-top: 10rem;
+  padding-top: 6.25rem;
   color: white;
 }
 
 .sub-heading {
   color: white;
-  font-size: 1.6rem;
-  margin-top: 1.5rem;
-  padding-bottom: 10rem;
+  font-size: 1rem;
+  margin-top: 0.9375rem;
+  padding-bottom: 6.25rem;
   text-align: center;
   text-align: align;
   font-weight: 500;
@@ -82,9 +82,9 @@ body {
 /* *********************** */
 
 .policy-heading {
-  padding-bottom: 0.7rem;
-  margin-top: 4rem;
-  margin-bottom: 6rem;
+  padding-bottom: 0.4375rem;
+  margin-top: 2.5rem;
+  margin-bottom: 3.75rem;
   color: #333;
   border-bottom: #333333;
   display: inline-block;
@@ -94,17 +94,17 @@ body {
 .policy-heading::before {
   content: "";
   position: absolute;
-  margin-left: 19rem;
+  margin-left: 11.875rem;
   border-radius: 20px;
-  bottom: -0.5rem;
+  bottom: -0.3125rem;
   left: 0;
-  width: 14rem;
+  width: 8.75rem;
   height: 2.5px;
   background: linear-gradient(to right, #000, #00a0cc 90%);
 }
 
 .policy-para {
-  font-size: 1.7rem;
+  font-size: 1.0625rem;
   /* text-align: center; */
   line-height: 2;
 }
