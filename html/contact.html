@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Page</title>
-    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
         input::-webkit-outer-spin-button,
         input::-webkit-inner-spin-button {
@@ -20,48 +21,92 @@
 </head>
 
 <body>
+
     <div class="head">
-        <h1>What’s on your mind?</h1>
-        <p>We’re here to help! Tell us what you’re looking for and we’ll get you connected to the right people.</p>
-    </div>
-
-    <div class="container">
-        <div class="col-1">
-            <img src="../images_rectruitment/image_reetruitment.jpg" class="Img-Help">
+        <div class="header-1">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quia nulla eius commodi magni doloremque ullam
+            repudiandae ut animi inventore.</p>
         </div>
-        <div class="col-2">
-            <form action="/submit" method="post">
+        
 
-                <div class="form-name">
-                    <!-- <label for="firstName">First Name</label> -->
-                    <input type="text" id="firstName" name="Name" placeholder="First name *" required>
+        <div class="container">
 
-                    <!-- <label for="lastName">Last Name</label> -->
-                    <input type="text" id="lastName" name="Name" placeholder="Last name *" required>
+            <div class="col-1">
+                <div class="left-header">
+                    <h1>What’s on your mind?</h1>
+                    <p>
+                        We’re here to help! Tell us what you’re looking for and we’ll get you
+                        connected to the right people.
+                    </p>
                 </div>
 
-                <div class="form-contact">
-                    <!-- <label for="">Phone Number</label> -->
-                    <input type="number" id="phone" name="Phone No." placeholder="Phone number *" inputmode="numeric"
-                        required>
+                <img src="../images_rectruitment/image_reetruitment.jpg" class="Img-Help" />
 
-                    <!-- <label for="email">Email</label> -->
-                    <input type="email" name="Email" id="email" placeholder="Your mail *">
+                <div class="icons" id="icons1">
+                    <div class="call-icon">
+                        <i class="material-icons" style="font-size:80px; color:orangered">call</i>
+                        <p>Call Us: 8 (968) 822-00-60</p>
+                        <p>(Monday-Saturday)</p>
+                    </div>
+                    <div class="mail-icon">
+                        <i class="material-icons" style="font-size:80px; color:orangered">email</i>
+                        <p>Mail us for help:</p>
+                        <p>admin@nssnsut.co.in</p>
+                    </div>
+                    <div class="address-icon">
+                        <i class="material-icons" style="font-size:80px; color:orangered">location_on</i>
+                        <p>Street Khabarova, 2</p>
+                        <p>Moscow, Russia</p>
+                    </div>
+
                 </div>
 
-                <div class="form-msg">
-                    <!-- <label for="message">Message</label> -->
-                    <textarea name="Message" id="message" cols="" rows="4" placeholder="Your message here..."
-                        required></textarea>
+            </div>
+
+            <div class="col-2">
+                <div class="right-header">
+                    <h1 id="con">Contact Us</h1>
+                    <h3>Fill out the form below to submit your request. Our team will get back to  you as soon as possible!</h3>
                 </div>
-                <button type="submit">Send now</button>
-            </form>
+                <form action="/submit" method="post">
+                    <div class="form">
+
+                        <input type="text" id="Name" name="Name" placeholder="Enter your name" required />
+
+                        <input type="number" id="phone" name="Phone No." placeholder="Enter your contact no."
+                            inputmode="numeric" required />
+
+                        <input type="email" name="Email" id="email" placeholder="Enter your mail" />
+
+                        <textarea name="Message" id="message" cols="" rows="9" placeholder="Type your request here..."
+                            required></textarea>
+
+                        <button type="submit">Send now</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="icons"  id="icons2">
+                <div class="call-icon">
+                    <i class="material-icons" style="font-size:80px; color:orangered">call</i>
+                    <p>Call Us: 8 (968) 822-00-60</p>
+                    <p>(Monday-Saturday)</p>
+                </div>
+                <div class="mail-icon">
+                    <i class="material-icons" style="font-size:80px; color:orangered">email</i>
+                    <p>Mail us for help:</p>
+                    <p>admin@nssnsut.co.in</p>
+                </div>
+                <div class="address-icon">
+                    <i class="material-icons" style="font-size:80px; color:orangered">location_on</i>
+                    <p>Street Khabarova, 2</p>
+                    <p>Moscow, Russia</p>
+                </div>
+
+            </div>
+
         </div>
-
-    </div>
-
-
-
 
 </body>
 
