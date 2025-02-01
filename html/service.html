@@ -1,0 +1,550 @@
+<!-- //Responsive -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Andika:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jura:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+VN:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+        iframe { border: none; width: 100%; }
+        #header { height: 149px;}
+        #footer { height: 315px;}
+        #navbar {height: 70px;}
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #e62026;
+        }
+        #Headers {
+            background: rgb(40,28,28);            ;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+        }
+        main {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .service {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(to left, #FFDBBB 50%, rgb(255,255,180) 50%);
+            background-size: 200% 100%;
+            background-position: right;
+            transition: background-position 0.5s ease-in-out;
+        }
+        .service:hover {
+            background-position: left;
+        }
+        .service-img {
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+        #Workforces {
+            background: rgb(255,255,180) !important;
+            font-family: Andika;
+        }
+
+
+        .service img {
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+        .service-content {
+            flex: 1;
+            
+        }
+        .workforce {
+            flex-direction: column;
+            padding-top: 1%;
+            
+        }
+
+        .workforce img {
+            margin-top: 10%;
+        }
+        .service h2 {
+            margin: 0 0 10px;
+            color: black;
+        }
+        
+        #seperate {
+            width: 50%;
+            height: 5px;
+            color: black;
+            background: linear-gradient(to right, #FFDBBB, black);
+            box-shadow: black 10px 10px 10px;
+        
+        }
+        .sector {
+            margin-bottom: 3%;
+        }
+        
+        .sector h1 {
+            font-size: 300%;
+            margin-left: 0%;
+            /* text-decoration: underline; */
+            background-color: black;
+            padding-top: 10%;
+            padding-left: 1%;
+            color: white;
+            font-family: Andika;
+            /* text-align: center; */
+        }
+
+        .scroll-container {
+            background-color: #333;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 10px;
+        }
+        b {
+            text-decoration: underline;
+        }
+        i {
+            font-size: 1.1em;
+            text-decoration: underline;
+            text-decoration-style: double;
+        }
+        .pair {
+            display: flex;
+            gap: 5%;
+            align-items: flex-start;
+        }
+        .Headings {
+            flex: 2;
+        }
+        .desc {
+            flex: 3;
+        }
+        .sector-paras {
+            background-color: #FDFBD4;
+            display: flex;
+            padding: 4%;
+            flex-direction: column;
+            font-family: IBM Plex Sans;
+            font-weight: 400;
+        }
+        
+        .sector-paras p {
+            text-align: justify;
+        }
+
+        #Para-seperate {
+            color: black;
+            height: 200%;
+            width: 100%;
+        }
+       #Services_heading{
+                padding-top: 20%;
+                background-color: black;
+                font-family: IBM Plex Sans;
+                padding-left: 1%;
+                color: white;
+                font-weight: 400;
+                margin-left: 0%;
+                margin-bottom: 0%;
+                font-size: 5em;
+                text-decoration: none;
+                margin-right: 0%;
+            }
+            .bottom_line {
+                background-color: red;
+                margin-top: -5% !important;
+                
+                /* text-align: ; */
+                font-size: 300%;
+                font-family: "Open Sans", sans-serif;
+                padding-left: 1%;
+                color: white;
+                font-weight:300;
+                width: 97%;
+                box-shadow: black 10px 10px 50px;
+            }
+            #b1 {
+                text-align: center;
+                padding-right: 0%;
+                padding-top: 5%;
+                text-decoration: underline;
+                font-weight: normal;
+
+            }
+            #b2 {
+                padding-right: 30%;
+                padding-top: 13%;
+
+            }
+        
+        @media (max-width: 768px)  {
+            body {
+                width: 166%;
+                margin-right: 0;
+                background-color: rgb(200,32,38,0.9);
+            }
+            main {
+                width: 100%;
+            }
+
+        
+            #Headers {
+                width: 95%;
+                text-decoration: overline;
+                margin-left: 0%;
+                margin-right: 0%;
+            }
+            #Workforces {
+                /* margin-left:2%; */
+                width: 100%;
+                margin-right: 1%;
+                /* padding-right: 20%; */
+            }
+            #seperate {display: none;}
+        
+        .sector {
+            background-color: rgb(100,32,38);
+            padding-right: 0%;
+            box-shadow: red 100px 10px 10px;
+        }
+        .sector h1 {
+            font-size: 2em;
+            font-weight: 700;
+        }
+        .container {
+            display: block !important;
+            
+        }
+            .column h2 {
+                font-size: 1.5em !important;
+            }
+            
+            .column {
+                width: 75% !important;
+                height: 100% !important;
+                margin-top: 10% !important;
+                margin-bottom: 10% !important;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .sector-paras {
+                width: 98%;
+            } 
+        
+        .bottom_line {
+            width: 100%;
+            padding-bottom: 1%;
+            padding-left: 5%;
+            margin-top: -10% !important;
+            box-shadow: black 5px 5px 100px;
+        }
+        #b2 {
+            font-size: 100%;
+        }
+        #Services_heading {
+            width: 106.5%; }
+    }
+           
+
+            @media only screen and (max-width: 1024px) and (min-width: 812px) {
+                
+                
+            #Services_heading {
+                width: 105%;
+            }
+        }
+            
+    </style>
+</head>
+<body>
+    <iframe id="header" src="full_header.html"></iframe>
+    <iframe id="navbar" src="nav.html"></iframe> 
+   
+        <h1 id="Headers">Our Recruitment Services</h1>
+    <hr id="seperate">
+        <br> <br>
+    
+        <section class="service" id="Workforces">
+            <div class="workforce">
+                <h2><i class="fas fa-user-tie"></i> Skilled & General Workforce</h2>
+                <p>We recruit certified skilled professionals as well as general laborers for various industries.</p>
+                <div class="scroll-container">
+                    <img src="1">
+                    <img src="2">
+                    <img src="3">
+                </div>
+            </div>
+        </section>
+        <main>
+        <section class="service">
+            <img src="../images/Constr_W.png" alt="Construction Workers" class="service-img">
+            <div class="service-content">
+                <h2> Construction Workers</h2>
+                <p>Our recruitment network specializes in providing experienced personnel for construction projects.</p>
+            </div>
+        </section>
+        <section class="service">
+            <img src="../images/Manf_staff.png" alt="Manufacturing Staff" class="service-img">
+            <div class="service-content">
+                <h2>Manufacturing Staff</h2>
+                <p>We offer skilled and semi-skilled workers for manufacturing and industrial operations.</p>
+            </div>
+        </section>
+        <section class="service">
+            <img src="../images/laptop.png" alt="IT Specialists" class="service-img">
+            <div class="service-content">
+                <h2>IT Specialists from India</h2>
+                <p>We source top-tier IT professionals from India, skilled in the latest technologies.</p>
+            </div>
+        </section>
+        
+    </main>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+            
+        }
+
+        .column {
+            width: 21em;
+            height: 21em;
+            background-color: #FFC5CB;
+            color: brown;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+            border-radius: 100%;
+            box-shadow: black 10px 5px 10px;
+            transition: ease 0.3s;
+
+        }
+
+        .column h2 {
+            margin: 0;
+            padding: 10px;
+            font-size: 1.2em !important;
+        }
+
+        .content {
+            padding: 10px;
+        }
+        .content p{
+            display: none;
+        }
+
+        .column img {
+            width: 100%;
+            border-radius: 0% !important;
+        }
+
+        .column:nth-child(odd) {
+            margin-top: 0px;
+        }
+
+        .column:nth-child(even) {
+            margin-top: 100px;
+            background-color: darkslategrey;
+            color: white;
+        }
+
+        .column:hover {
+            transform: scale(1.1);
+            box-shadow: none;
+        }
+
+        .content img {
+            border-radius: 50%;
+        }
+
+        .Headings {
+            background-color: rgb(215,255,212);
+        }
+        
+        @media (max-width: 768px) {
+            .column h2 {
+                font-size: 1.5em !important;
+            }
+        }
+
+        @media only screen and (max-width: 1024px) and (min-width: 812px) {
+            .container {
+                    width: 95%;
+                    display: flex !important;
+                    /* flex-direction: column; */
+                }
+                .column {
+                    padding-top: 10% !important; 
+                    height: 10% !important;
+                }
+              
+                
+                .paircol {
+                    display: flex !important;
+                    gap: 10% !important;
+                }
+                
+                .column h2 {
+                    font-size: 120% !important;
+                }
+            
+        }
+
+    </style>
+        <section class="sector">
+            <h1> We also deal in... </h1>
+            <div class="container">
+                    <div class="column">
+                        <h2>Sports</h2>
+                        <div class="content">
+                            <img src="../images/Sec1.png" alt="Sports">
+                            <p>Engage in various sports activities and stay fit.</p>
+                        </div>
+                    </div>
+            
+                    <div class="column">
+                        <h2>Youth Exchange</h2>
+                        <div class="content">
+                            <img src="../images/Sec2.png" alt="Youth Exchange" id="YE"> 
+                            <p>Participate in cultural exchange programs.</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h2>Empowering <br> the Manpower</h2>
+                        <div class="content">
+                            <img src="../images/Sec3.png" alt="Manpower">
+                            <p>Develop workforce skills and leadership.</p>
+                        </div>
+                    </div>
+            
+                    <div class="column">
+                        <h2>Cultural Exchange</h2>
+                        <div class="content">
+                            <img src="../images/Sec4.png" alt="Cultural">
+                            <p>Celebrate traditions and diverse cultures.</p>
+                        </div>
+                    </div>
+            </div>
+            <h1 id="Services_heading"> Key Services of Pathway Global Alliance</h1>
+            <div class="sector-paras">
+                
+                <div class="pair">
+                    <div class="Headings">
+                        <h2> <i>1.</i> Tri Nations Wrestling</h2> 
+                    </div>
+                    <div class="desc">
+                        <p>Our organization proudly hosts the <b>Tri-Nation-Wrestling Championship</b>, bringing together top wrestlers from three nations to compete in an intense and thrilling showdown. This event fosters sportsmanship, strength, and unity, providing a platform for athletes to showcase their skills. With a commitment to promoting wrestling and international camaraderie, we ensure an electrifying experience for both participants and spectators.</p>
+                    </div>
+                </div>
+                <hr id="Para-seperate">
+                <div class="pair">
+                    <div class="Headings">
+                        <h2> <i>2.</i> Youth Exchange Programs</h2>
+                    </div>
+                    <div class="desc">
+                        <p> Organizing international <b>youth exchange initiatives</b> to foster cross cultural understanding. Providing leadership training and diplomatic exposure to young leaders. Facilitating global networking opportunities for students and 
+                            professionals. </p>
+                    </div>
+                </div>
+                <hr id="Para-seperate">
+                <div class="pair">
+                    <div class="Headings">
+                        <h2> <i>3.</i> Manpower of our Organisation</h2>
+                    </div>
+                    <div class="desc">
+                        <p>The organization is powered by a dedicated and skilled workforce, comprising passionate professionals, volunteers, and experts from diverse fields. Their collective efforts drive our initiatives, ensuring smooth operations and impactful programs. With strong leadership, teamwork, and a commitment to excellence, our manpower plays a crucial role in achieving our mission and making a meaningful difference in society.</p>
+                    </div>
+                </div>
+                <hr id="Para-seperate">
+                <div class="pair">
+                    <div class="Headings">
+                        <h2> <i>4</i>. Capacity Building & Leadership Devleopment</h2>
+                    </div>
+                    <div class="desc">
+                        <p>Offering mentorship programs and leadership training sessions. Partnering with universities and think tanks to provide specialized skill development courses. 
+                            Providing scholarships and fellowships to support emerging leaders in 
+                            cultural and diplomatic sectors. </p>
+                    </div>
+                </div><hr id="Para-seperate">
+                <div class="pair">
+                    <div class="Headings">
+                        <h2><i>5.</i> Global Cooperation & Partnerships</h2>
+                    </div>
+                    <div class="desc">
+                            <p> Establishing collaborations with international organizations, governments, and NGOs. Representing Indian culture and leadership at global summits and policy forums. Advocating for cultural diplomacy as a tool for peacebuilding and 
+                                international relations. </p>
+                    </div>
+                </div><hr id="Para-seperate">
+                <div class="pair">
+                    <div class="Headings">
+                        <h2> <i>6.</i> Educational & Research Initiatives</h2>
+                    </div>
+                    <div class="desc">
+                        <p>Establishing collaborations with international organizations, governments, and NGOs. Representing Indian culture and leadership at global summits and policy forums. Advocating for cultural diplomacy as a tool for peacebuilding and 
+                            international relations. </p>
+                    </div>
+                </div><hr id="Para-seperate">
+                <div class="pair">
+                    <div class="Headings">
+                        <h2> <i>7.</i> Digital & Media Engagement</h2>
+                    </div>
+                    <div class="desc">
+                        <p> Creating online cultural workshops and virtual heritage experiences. Producing digital content, including podcasts, webinars, and documentaries. Utilizing social media platforms to engage a global audience in cultural dialogues.</p>
+                    </div>
+                </div><hr id="Para-seperate">
+                <div class="pair">
+                    <div class="Headings">
+                        <h2> <i>8.</i> Advisory & Consultancy Services </h2>
+                    </div>
+                    <div class="desc">
+                        <p>Providing expertise in cultural diplomacy and international cooperation. Advising government bodies, corporate organizations, and NGOs on cultural engagement strategies. Offering policy research and analysis in the areas of leadership and global partnerships.</p>
+                    </div>
+                </div>
+                <hr id="Para-seperate">
+                <div class="pair">
+                    <div class="Headings">
+                        <h2> <i>9.</i> Cultural Promotion & Events</h2>
+                    </div>
+                    <div class="desc">
+                        <p>Hosting cultural festivals, exhibitions, and performances to showcase 
+                            India’s heritage. Conducting workshops on traditional Indian arts, crafts, and 
+                            performing arts. Collaborating with embassies and cultural institutions to promote 
+                            intercultural dialogue.</p>
+                    </div>
+                </div>
+        
+            </div>
+            <div class="bottom_line">
+                <p id="b1"> We're here for you....</p>
+                <p id="b2">Pathway Global Alliance remains committed to strengthening international 
+                    ties through meaningful cultural, educational, and leadership engagements.</p>
+            </div>
+        
+        </section>
+        
+        <iframe id="footer" src="footer.html"></iframe>
+
+</body>
+</html>
