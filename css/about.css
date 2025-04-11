@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Andika', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+
+
+h2 {
+    font-size: 46px;
+    line-height: 64px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color:#222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 60px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+}
+
+/* button.normal {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 30px;
+    color: #fff;
+    background: linear-gradient(135deg, #088178, #3271a5);
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button.normal:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+} */
+
+
+
+.others {
+    background-color: white; /* Ensures no unwanted colors */
+    text-align: center;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    max-width: 100%;
+    margin: 40px;
+}
+
+.others:hover {
+    background: linear-gradient(135deg, #f0faf9, #e3f2fd); /* Soft gradient for elegance */
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15); /* Deeper shadow for depth */
+    transform: translateY(-5px) scale(1.03); /* Subtle floating effect */
+    transition: all 0.4s ease-in-out; /* Smooth transition */
+}
+
+
+.others h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.others p {
+    display: flex;
+    font-size: 18px;
+    margin: 20px;
+    color: #333;
+}
+
+#hover1:hover {
+    background-color: #183550;
+    width: 100%;
+    height: 80px;
+    color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#underline {
+    width: 60px;
+    height: 3px;
+    background-color: black;
+    border: none;
+    margin: 10px auto;
+}
+
+#page-header{
+    width: 100%;
+    height:60vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header.about-header {
+    background-image: url("../images/1.webp");
+}
+
+#page-header.about-header h2,
+#page-header.about-header p{
+    color: #fff;
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+}
+
+#about-head img {
+    width: 50%;
+    height: auto;
+}
+
+#about-head div {
+    padding: 40px;
+}
+
+#us{
+    text-align: center;
+    padding-bottom: 20;
+} 
+
+.facts-section {
+    padding: 50px 20px;
+    background-color: #e8f0ff;
+    text-align: center;
+}
+
+.facts-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.facts-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    justify-content: center; /* Center the boxes */
+    gap: 30px; /* Add more spacing between boxes */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fact {
+    background-color: white;
+    padding: 25px; /* Increase padding for better spacing */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Increase width to make it wider */
+    max-width: 500px; /* Prevent it from becoming too large */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fact h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px; /* Increase spacing */
+}
+
+.fact:hover {
+    transform: translateY(-5px) scale(1.05);
+    background: linear-gradient(135deg, #e3f2fd, #c1e3ff); /* Light blue gradient */
+    color: #3271a5; /* Deep blue text */
+    box-shadow: 0px 10px 20px rgba(50, 113, 165, 0.2); /* Blue shadow */
+}
+
+
+#vision{
+    text-align: center;
+    padding-bottom: 20;
+} 
+
+
+.vis-section {
+    padding: 50px 20px;
+    background-color: #e8f0ff;
+    text-align: center;
+}
+
+.vis-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+
+.vis-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    justify-content: center; /* Center the boxes */
+    gap: 30px; /* Add more spacing between boxes */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.vis {
+    background-color: white;
+    padding: 25px; /* Increase padding for better spacing */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Increase width to make it wider */
+    max-width: 500px; /* Prevent it from becoming too large */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vis h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px; /* Increase spacing */
+}
+
+.vis:hover {
+    transform: translateY(-5px) scale(1.05);
+    background: linear-gradient(135deg, #e3f2fd, #c1e3ff); /* Light blue gradient */
+    color: #3271a5; /* Deep blue text */
+    box-shadow: 0px 10px 20px rgba(50, 113, 165, 0.2); /* Blue shadow */
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+
+#newsletter p span{
+    color: #ffbd27;
+}
+
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    
+}
+
+#newsletter button{
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+} */
+
+
+/*media*/
+@media (max-width: 768px) {
+    .feature {
+        justify-content: center;
+    }
+    
+    .feature .fe-box {
+        width: 45%; /* Adjust size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .feature .fe-box {
+        width: 100%; /* Full width for small screens */
+    }
+}
