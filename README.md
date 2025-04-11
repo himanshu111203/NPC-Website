@@ -1,4 +1,4 @@
-Objective is to create a website that firstly explains the benefits of working in Russia i.e, attract the workers for the services available.. 
+Objective is to create a website that firstly explains the benefits of working in Russia i.e, attract the workers for the services available. 
 Then finally create an application form for the same
 CURRENT LANGUAGE PLANS:
 Frontend- HTML CSS JS 
